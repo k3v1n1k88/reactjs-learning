@@ -1,0 +1,35 @@
+.Thought {
+  display: flex;
+  align-items: center; /* Căn giữa theo chiều dọc */
+  justify-content: space-between; /* Hoặc 'gap: 8px' nếu muốn cách đều */
+  padding: 8px 12px;
+  background-color: #f1f1f1;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+.Thought li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex: 1; /* Cho phép chiếm phần lớn không gian */
+}
+
+.Thought span {
+  font-size: 14px;
+  color: gray;
+  white-space: nowrap;
+}
+
+.Thought button {
+  border-width: 0;
+  background-color: transparent;
+}
+
+.Thought:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.Thought:nth-child(odd) {
+  background-color: #ffffff;
+}
